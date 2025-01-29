@@ -1,0 +1,150 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-bar {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+.hero {
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  background: #f8f9fa;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+#email {
+  padding: 0.8rem;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#submit {
+  background: #007bff;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#submit:hover {
+  background: #0056b3;
+}
+
+#features {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+  padding: 2rem;
+}
+
+.video-container {
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+#video {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+}
+
+#pricing {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  min-width: 280px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+  font-size: 2rem;
+  color: #007bff;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  #nav-bar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 12rem;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+}
